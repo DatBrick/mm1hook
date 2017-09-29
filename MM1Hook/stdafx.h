@@ -1,16 +1,34 @@
-// stdafx.h : include file for standard system include files,
-// or project specific include files that are used frequently, but
-// are changed infrequently
-//
-
 #pragma once
 
-#include "targetver.h"
+#define WIN32_LEAN_AND_MEAN
+#include <Windows.h>
 
-#define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
-// Windows Header Files:
-#include <windows.h>
+#include <cstdio>
+#include <cstddef>
+#include <cstdint>
+#include <cstring>
 
+#include <type_traits>
 
+struct Vector3
+{
+    float x;
+    float y;
+    float z;
+};
 
-// TODO: reference additional headers your program requires here
+struct Vector4
+{
+    float x;
+    float y;
+    float z;
+    float w;
+};
+
+struct Matrix34
+{
+    Vector3 m0;
+    Vector3 m1;
+    Vector3 m2;
+    Vector3 m3;
+};
