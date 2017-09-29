@@ -81,6 +81,7 @@
     <ClInclude Include="agiRasterizer.h" />
     <ClInclude Include="asCullable.h" />
     <ClInclude Include="asCullManager.h" />
+    <ClInclude Include="asLinearCS.h" />
     <ClInclude Include="asNode.h" />
     <ClInclude Include="agiRefreshable.h" />
     <ClInclude Include="Base.h" />

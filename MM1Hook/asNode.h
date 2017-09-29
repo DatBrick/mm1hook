@@ -19,12 +19,3 @@ public:
     virtual void Load(void) = 0;
     virtual void Save(void) = 0;
 };
-
-class asLinearCS : public asNode
-{
-public:
-    Matrix34 matrix341C;
-    Matrix34 matrix344C;
-    int Global;
-    asLinearCS *Parent;
-};

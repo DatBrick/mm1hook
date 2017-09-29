@@ -8,7 +8,7 @@
 class agiPipeline
 {
 public:
-    unsigned int dword4;
+    const char *Name;
     unsigned int dword8;
     unsigned int dwordC;
     unsigned int Width;
@@ -22,14 +22,14 @@ public:
     int VertRes;
     float dword34;
     unsigned int dword38;
-    unsigned int dword3C;
+    unsigned int Lightmask;
     BYTE gap40[264];
     DDSURFACEDESC2 SurfaceDesc;
     BYTE gap1C4[248];
-    unsigned int ColorModel;
-    unsigned int ColorModel1;
-    unsigned int ColorModel2;
-    agiColorModel *ColorModel3;
+    agiColorModel *ColorModel0;
+    agiColorModel *ColorModel1;
+    agiColorModel *ColorModel2;
+    agiColorModel *UIColorModel;
     struct agiRenderer *pRenderer;
     unsigned int dword2D0;
     unsigned int MaxTextureWidth;

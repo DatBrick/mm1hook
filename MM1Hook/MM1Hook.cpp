@@ -65,7 +65,7 @@ public:
 
 FunctionHook<void (WArray::*)(const char*)> Read(0x4A0F20, &WArray::Read);
 
-FunctionHook<LONG (WINAPI*)(DEVMODEA *, DWORD)> Hook_ChangeDisplaySettingsA((std::uintptr_t) &ChangeDisplaySettingsA, [ ] (DEVMODEA* lpDevMode, DWORD dwFlags) -> LONG
+decltype(Hook_ChangeDisplaySettingsA) Hook_ChangeDisplaySettingsA((std::uintptr_t) &ChangeDisplaySettingsA, [ ] (DEVMODEA* lpDevMode, DWORD dwFlags) -> LONG
 {
     if (lpDevMode)
     {
@@ -75,4 +75,3 @@ FunctionHook<LONG (WINAPI*)(DEVMODEA *, DWORD)> Hook_ChangeDisplaySettingsA((std
 
     return Hook_ChangeDisplaySettingsA(lpDevMode, dwFlags);
 });
-
