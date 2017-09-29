@@ -48,6 +48,15 @@
     <ClInclude Include="asCullManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asRefreshable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agiPipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MM1Hook.cpp">
@@ -62,5 +71,8 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Types.txt" />
   </ItemGroup>
 </Project>

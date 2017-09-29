@@ -5,6 +5,8 @@
 
 #include "MM1Hook.h"
 
+#include "Vector.h"
+
 namespace MM1
 {
     auto OpenFile = get_as<class Stream* (*)(const char *name, const char *folder, const char *extension, int a4, int a5, const char *type)>(0x5418E0);
@@ -29,6 +31,9 @@ public:
 
             while ( MM1::fgets(line, 128, pStream) )
             {
+#pragma warning(push)
+#pragma warning(disable : 4996)
+
                 auto menuName = strtok(line, ",");
                 auto menuID = atoi(strtok(0, ","));
 
@@ -42,6 +47,8 @@ public:
                 dimensions.z = (float) atoi(strtok(0, ",")) / 480;
 
                 auto description = strtok(0, "\r\n");
+
+#pragma warning(pop)
 
                 (this->*WArray__AddWidgetData)(menuID, widgetID, dimensions, description);
             }
