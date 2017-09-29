@@ -78,10 +78,11 @@
   <ItemGroup>
     <ClInclude Include="agi.h" />
     <ClInclude Include="agiPipeline.h" />
+    <ClInclude Include="agiRasterizer.h" />
     <ClInclude Include="asCullable.h" />
     <ClInclude Include="asCullManager.h" />
     <ClInclude Include="asNode.h" />
-    <ClInclude Include="asRefreshable.h" />
+    <ClInclude Include="agiRefreshable.h" />
     <ClInclude Include="Base.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="Hooking.h" />
