@@ -1,7 +1,7 @@
 #pragma once
 
 #include "agi.h"
-#include "asRefreshable.h"
+#include "agiRefreshable.h"
 
 #include <ddraw.h>
 
