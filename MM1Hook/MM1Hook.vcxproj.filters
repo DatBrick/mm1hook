@@ -63,6 +63,12 @@
     <ClInclude Include="asLinearCS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ipc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agiBitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MM1Hook.cpp">
@@ -79,6 +85,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Types.txt" />
+    <Text Include="mmlang.txt" />
+    <Text Include="metaclass_types.txt" />
   </ItemGroup>
 </Project>

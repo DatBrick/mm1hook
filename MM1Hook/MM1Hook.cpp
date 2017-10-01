@@ -75,3 +75,4 @@ decltype(Hook_ChangeDisplaySettingsA) Hook_ChangeDisplaySettingsA((std::uintptr_
 
     return Hook_ChangeDisplaySettingsA(lpDevMode, dwFlags);
 });
+

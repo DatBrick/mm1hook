@@ -77,6 +77,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="agi.h" />
+    <ClInclude Include="agiBitmap.h" />
     <ClInclude Include="agiPipeline.h" />
     <ClInclude Include="agiRasterizer.h" />
     <ClInclude Include="asCullable.h" />
@@ -87,6 +88,7 @@
     <ClInclude Include="Base.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="Hooking.h" />
+    <ClInclude Include="ipc.h" />
     <ClInclude Include="MetaClass.h" />
     <ClInclude Include="MiniParser.h" />
     <ClInclude Include="MM1Hook.h" />
@@ -110,7 +112,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Types.txt" />
+    <Text Include="mmlang.txt" />
+    <Text Include="metaclass_types.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

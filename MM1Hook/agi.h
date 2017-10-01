@@ -21,3 +21,5 @@ public:
     virtual void SetPixel(class agiSurfaceDesc *,int,int,unsigned int) = 0;
     virtual unsigned int GetPixel(class agiSurfaceDesc *,int,int) = 0;
 };
+
+typedef DDSURFACEDESC2 agiSurfaceDesc;
