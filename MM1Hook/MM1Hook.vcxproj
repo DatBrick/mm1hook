@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClInclude Include="agi.h" />
     <ClInclude Include="agiBitmap.h" />
+    <ClInclude Include="agiColorModel.h" />
     <ClInclude Include="agiPipeline.h" />
     <ClInclude Include="agiRasterizer.h" />
     <ClInclude Include="asCullable.h" />
@@ -86,14 +87,19 @@
     <ClInclude Include="asNode.h" />
     <ClInclude Include="agiRefreshable.h" />
     <ClInclude Include="Base.h" />
+    <ClInclude Include="Callback.h" />
     <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="HierFileSystem.h" />
     <ClInclude Include="Hooking.h" />
     <ClInclude Include="ipc.h" />
     <ClInclude Include="MetaClass.h" />
     <ClInclude Include="MiniParser.h" />
     <ClInclude Include="MM1Hook.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="Tokenizer.h" />
     <ClInclude Include="Vector.h" />
+    <ClInclude Include="VirtualFileSystem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
