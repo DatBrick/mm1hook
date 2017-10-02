@@ -95,8 +95,10 @@
     <ClInclude Include="MetaClass.h" />
     <ClInclude Include="MiniParser.h" />
     <ClInclude Include="MM1Hook.h" />
+    <ClInclude Include="mmTimer.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Stream.h" />
+    <ClInclude Include="Timer.h" />
     <ClInclude Include="Tokenizer.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="VirtualFileSystem.h" />
