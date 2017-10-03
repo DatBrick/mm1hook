@@ -9,7 +9,7 @@ class asCullManager : public asNode
     unsigned int ColorRed;
     unsigned int ColorGreen;
     unsigned int ColorBlue;
-    unsigned int Debug;
+    unsigned int Debug; // Toggle with CTRL + SHIFT + V
     unsigned int nCameras;
     asCamera *pCameras[16];
     asCamera *pCurrentCamera;

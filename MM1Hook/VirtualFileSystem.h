@@ -17,7 +17,7 @@ struct VirtualFileInode
     unsigned int DataOffset;
     unsigned int Size : 23;
     unsigned int ExtensionOffset : 9;
-    bool IsDirectory : 1;
+    unsigned int IsDirectory : 1;
     unsigned int NameInteger : 13;
     unsigned int NameOffset : 18;
 };

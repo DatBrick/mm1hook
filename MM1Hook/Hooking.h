@@ -1,6 +1,6 @@
 #pragma once
 
-template <typename T, typename = std::enable_if<std::is_pointer<T>::value || std::is_member_function_pointer<T>::value>::type>
+template <typename T, typename = std::enable_if<sizeof(T) == sizeof(std::uintptr_t) && std::is_pointer<T>::value || std::is_member_function_pointer<T>::value>::type>
 T get_as(std::uintptr_t address)
 {
     return reinterpret_cast<T&>(address);

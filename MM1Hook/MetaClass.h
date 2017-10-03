@@ -1,18 +1,21 @@
 #pragma once
 
+class MetaField;
+class MetaType;
+
 class MetaClass
 {
 public:
     const char *Name;
-    unsigned int Index;
-    void*(*Allocator)(int);
-    void(*Deallocator)(void*, int);
-    void(*Declarer)(void);
+    unsigned int Size;
+    void*(*Alloc)(int);
+    void(*Free)(void*, int);
+    void(*DeclareFields)(void);
     MetaClass *Parent;
     MetaClass *Child;
     MetaClass *Next;
     MetaField *pFields;
-    unsigned int SerialIndex;
+    unsigned int Index;
 };
 
 class MetaField
@@ -24,11 +27,9 @@ public:
     MetaType *pType;
 };
 
-class StructType
+class MetaType
 {
 public:
-    MetaClass *pMetaClass;
-
     virtual void Save(class MiniParser *,void *) = 0;
     virtual void Load(class MiniParser *,void *) = 0;
     virtual unsigned int SizeOf(void) = 0;
@@ -36,8 +37,29 @@ public:
     virtual void Delete(void *,int) = 0;
 };
 
-class MetaType : public StructType
+class StructType : public MetaType
 {
 public:
-    // Nothing to see here
+    MetaClass *pMetaClass;
+};
+
+class ArrayOfType : public MetaType
+{
+public:
+    MetaType *pType;
+    int nCount;
+};
+
+class RefToType : public MetaType
+{
+public:
+    MetaType *pType;
+    int RefOffset;
+    unsigned int RefSize;
+};
+
+class PtrToType : public MetaType
+{
+public:
+    MetaType *pType;
 };
