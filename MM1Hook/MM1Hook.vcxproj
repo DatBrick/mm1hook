@@ -79,6 +79,7 @@
     <ClInclude Include="agi.h" />
     <ClInclude Include="agiBitmap.h" />
     <ClInclude Include="agiColorModel.h" />
+    <ClInclude Include="agiLight.h" />
     <ClInclude Include="agiPipeline.h" />
     <ClInclude Include="agiRasterizer.h" />
     <ClInclude Include="asCullable.h" />

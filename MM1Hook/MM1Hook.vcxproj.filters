@@ -93,6 +93,9 @@
     <ClInclude Include="mmTimer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="agiLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MM1Hook.cpp">

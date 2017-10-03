@@ -240,3 +240,34 @@ void DumpMetaInfo()
     std::fflush(output);
     std::fclose(output);
 }
+
+/*
+BOOL IsQuadCoplanar(struct Vector3 *a1, struct Vector3 *a2, struct Vector3 *a3, struct Vector3 *a4)
+{
+    Vector3 v0, v1, v2, v3;
+
+    v0.x = a1->x - a2->x;
+    v0.y = a1->y - a2->y;
+    v0.z = a1->z - a2->z;
+
+    v1.x = a3->x - a2->x;
+    v1.y = a3->y - a2->y;
+    v1.z = a3->z - a2->z;
+
+    v2.x = v0.z * v1.y - v0.y * v1.z;
+    v2.y = v0.x * v1.z - v0.z * v1.x;
+    v2.z = v0.y * v1.x - v0.x * v1.y;
+
+    float f0 = Vector3::InvMag(&v2);
+
+    v3.x = f0 * v2.x;
+    v3.y = f0 * v2.y;
+    v3.z = f0 * v2.z;
+
+    v2.x = a4->x - a2->x;
+    v2.y = a4->y - a2->y;
+    v2.z = a4->z - a2->z;
+
+    return QuadCoplanarTolerance > fabs((v3.x * v2.x + v3.y * v2.y + v3.z * v2.z) / sqrt(Vector3::Area(a2, a1, a3) + Vector3::Area(a4, a1, a3)));
+}
+*/

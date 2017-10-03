@@ -1,7 +1,8 @@
 #pragma once
 
-#include "agi.h"
+#include "agiColorModel.h"
 #include "agiRefreshable.h"
+#include "agiLight.h"
 
 #include <ddraw.h>
 
@@ -59,10 +60,10 @@ public:
     virtual void CopyBitmap(int,int,class agiBitmap *,int,int,int,int) = 0;
     virtual void ClearAll(int) = 0;
     virtual void ClearRect(int,int,int,int,unsigned int) = 0;
-    virtual void agiPipeline::Print(int,int,int,char const *) = 0;
-    virtual int agiPipeline::PrintIs3D(void) = 0;
-    virtual void agiPipeline::PrintInit(void) = 0;
-    virtual void agiPipeline::PrintShutdown(void) = 0;
+    virtual void Print(int,int,int,char const *) = 0;
+    virtual int PrintIs3D(void) = 0;
+    virtual void PrintInit(void) = 0;
+    virtual void PrintShutdown(void) = 0;
     virtual void Defragment(void) = 0;
     virtual int LockFrameBuffer(class agiSurfaceDesc &) = 0;
     virtual void UnlockFrameBuffer(void) = 0;
