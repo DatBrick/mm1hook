@@ -91,23 +91,23 @@ decltype(Hook_ChangeDisplaySettingsA) Hook_ChangeDisplaySettingsA((std::uintptr_
 #include <algorithm>
 #include <string>
 
-std::string GetMetaTypeName(MetaType* pType)
+std::string GetMetaTypeName(MetaType* pType, MetaField* pField, MetaField** pFields, std::size_t nFields)
 {
     switch (*(std::uintptr_t*)(pType))
     {
-        case 0x5960C8: return "Vector3";
-        case 0x5960F8: return "Vector4";
-        case 0x596218: return "Vector2";
-        case 0x5962D8: return "Char";
-        case 0x5962F0: return "SignedChar";
-        case 0x596308: return "UnsignedChar";
-        case 0x596320: return "SignedShort";
-        case 0x596338: return "UnsignedShort";
-        case 0x596350: return "SignedInt";
-        case 0x596368: return "SignedInt64";
-        case 0x596380: return "UnsignedInt";
-        case 0x596398: return "Float";
-        case 0x5963B0: return "String";
+        case 0x596218: return "Vector2";        // Vector2Type
+        case 0x5960C8: return "Vector3";        // Vector3Type
+        case 0x5960F8: return "Vector4";        // Vector4Type
+        case 0x5962D8: return "char";           // CharType
+        case 0x5962F0: return "signed char";    // SignedCharType
+        case 0x596308: return "unsigned char";  // UnsignedCharType
+        case 0x596320: return "short";          // SignedShortType
+        case 0x596338: return "unsigned short"; // UnsignedShortType
+        case 0x596350: return "int";            // SignedIntType
+        case 0x596368: return "long long";      // SignedInt64Type
+        case 0x596380: return "unsigned int";   // UnsignedIntType
+        case 0x596398: return "float";          // FloatType
+        case 0x5963B0: return "string";         // StringType
 
         case 0x590F58:
         {
@@ -118,21 +118,38 @@ std::string GetMetaTypeName(MetaType* pType)
         {
             auto* pArrayOfType = static_cast<ArrayOfType*>(pType);
             
-            return GetMetaTypeName(pArrayOfType->pType) + "[" + std::to_string(pArrayOfType->nCount) + "]"; 
+            return GetMetaTypeName(pArrayOfType->pType, nullptr, pFields, nFields) + "[" + std::to_string(pArrayOfType->nCount) + "]"; 
         }
 
         case 0x5942A8:
         {
             auto* pRefToType = static_cast<RefToType*>(pType);
 
-            return GetMetaTypeName(pRefToType->pType) + "& (" + std::to_string(pRefToType->RefOffset) + "," + std::to_string(pRefToType->RefSize) + ")";
+            std::string array_size = std::to_string(pRefToType->RefOffset) + "," + std::to_string(pRefToType->RefSize);
+
+            if (pField)
+            {
+                auto offset = pField->Offset + pRefToType->RefOffset;
+
+                for (std::size_t i = 0; i < nFields; ++i)
+                {
+                    if (pFields[i]->Offset == offset && pFields[i]->pType->SizeOf() == pRefToType->RefSize)
+                    {
+                        array_size = pFields[i]->Name;
+
+                        break;
+                    }
+                }
+            }
+
+            return GetMetaTypeName(pRefToType->pType, nullptr, pFields, nFields) + " [" + array_size + "]";
         }
 
         case 0x5953E0:
         {
             auto* pPtrToType = static_cast<PtrToType*>(pType);
         
-            return GetMetaTypeName(pPtrToType->pType) + "*";
+            return GetMetaTypeName(pPtrToType->pType, nullptr, pFields, nFields) + "*";
         }
     }
 
@@ -157,14 +174,17 @@ void DumpMetaInfo()
     {
         auto* pClass = classes[i];
 
-        std::fprintf(output, "%s (%u)", pClass->Name, pClass->Size);
+        std::fputs(pClass->Name, output);
 
         if (pClass->Parent)
         {
-            std::fprintf(output, " : %s (%u)", pClass->Parent->Name, pClass->Parent->Size);
+            std::fprintf(output, " : %s (%u, %u)", pClass->Parent->Name, pClass->Size - pClass->Parent->Size, pClass->Size);
+        }
+        else
+        {
+            std::fprintf(output, " (%u)", pClass->Size);
         }
 
-        std::putc('\n', output);
 
         if (pClass->DeclareFields)
         {
@@ -187,24 +207,32 @@ void DumpMetaInfo()
                 fields[field_count++] = pField;
             }
 
-            std::sort(fields, fields + field_count, [ ] (MetaField* lhs, MetaField* rhs)
+            if (field_count)
             {
-                return lhs->Offset < rhs->Offset;
-            });
+                std::fputs(" {\n", output);
 
-            for (std::size_t j = 0; j < field_count; ++j)
+                std::sort(fields, fields + field_count, [ ] (MetaField* lhs, MetaField* rhs)
+                {
+                    return lhs->Offset < rhs->Offset;
+                });
+
+                for (std::size_t j = 0; j < field_count; ++j)
+                {
+                    auto* pField = fields[j];
+                    auto* pType  = pField->pType;
+
+                    std::fprintf(output, "    %s %s @ 0x%X\n", GetMetaTypeName(pType, pField, fields, field_count).c_str(), pField->Name, pField->Offset);
+                }
+
+                std::fputs("}\n", output);
+            }
+            else
             {
-                auto* pField = fields[j];
-                auto* pType  = pField->pType;
-
-                std::fprintf(output, "%s (%u)", GetMetaTypeName(pType).c_str(), pType->SizeOf());     
-
-                std::fprintf(output, " @ 0x%-4X: %s\n", pField->Offset, pField->Name);
-                std::fflush(output);
+                std::fputs(";\n", output);
             }
         }
 
-        std::putc('\n', output);
+        std::fputs("\n", output);
 
         std::fflush(output);
     }

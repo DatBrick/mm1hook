@@ -1,659 +1,700 @@
 Total: 120
-mmGameManager (84) : asNode (28)
-
-mmInterface (219184) : asNode (28)
-
-mmGame (124264) : asNode (28)
-
-mmGameEdit (124720) : asNode (28)
-
-mmSingleBlitz (124336) : asNode (28)
-
-mmSingleCircuit (124400) : asNode (28)
-
-mmGameSingle (124392) : asNode (28)
-
-mmMultiBlitz (126600) : asNode (28)
-
-mmMultiCircuit (126592) : asNode (28)
-
-mmMultiCR (126712) : asNode (28)
-
-mmMultiRace (126592) : asNode (28)
-
-mmHudMap (712) : asNode (28)
-
-mmPlayer (18088) : asNode (28)
-Float (4) @ 0x45C8: ScoreWeight
-SignedInt (4) @ 0x4600: SpeedSensitive
-Float (4) @ 0x4604: SpeedBaseLow
-Float (4) @ 0x4608: SpeedBaseHi
-Float (4) @ 0x460C: DiscreteSteeringDeltaInHi
-Float (4) @ 0x4610: DiscreteSteeringDeltaOutHi
-Float (4) @ 0x4614: DiscreteSteeringFilterHi
-Float (4) @ 0x4618: DiscreteSteeringDeltaInLo
-Float (4) @ 0x461C: DiscreteSteeringDeltaOutLo
-Float (4) @ 0x4620: DiscreteSteeringFilterLo
-Float (4) @ 0x4624: MouseSensitivityLow
-Float (4) @ 0x4628: MouseSteerFilterLow
-Float (4) @ 0x462C: MouseSensitivityHi
-Float (4) @ 0x4630: MouseSteerFilterHi
-SignedShort (2) @ 0x4638: JoyApp
-Float (4) @ 0x463C: JoySteerApproachOutHi
-Float (4) @ 0x4640: JoySteerApproachInHi
-Float (4) @ 0x4644: JoySteerAppApp
-Float (4) @ 0x464C: JoySteerApproachOutLo
-Float (4) @ 0x4650: JoySteerApproachInLo
-Float (4) @ 0x4658: JoySteerFilterLow
-Float (4) @ 0x465C: JoySensitivityLow
-Float (4) @ 0x4660: JoySteerFilterHi
-Float (4) @ 0x4664: JoySensitivityHi
-SignedShort (2) @ 0x4670: WheelApp
-Float (4) @ 0x4674: WheelSteerApproachOutHi
-Float (4) @ 0x4678: WheelSteerApproachInHi
-Float (4) @ 0x467C: WheelSteerAppApp
-Float (4) @ 0x4684: WheelSteerApproachOutLo
-Float (4) @ 0x4688: WheelSteerApproachInLo
-Float (4) @ 0x4690: WheelSteerFilterLow
-Float (4) @ 0x4694: WheelSensitivityLow
-Float (4) @ 0x4698: WheelSteerFilterHi
-Float (4) @ 0x469C: WheelSensitivityHi
-
-mmHUD (2968) : asLinearCS (132)
-
-mmGameMulti (126584) : asNode (28)
-
-mmDashView (1480) : asLinearCS (132)
-Vector3 (12) @ 0x2E0 : SpeedPos
-Vector3 (12) @ 0x2EC : RPMPos
-Vector3 (12) @ 0x2F8 : DamagePos
-Float (4) @ 0x304 : SpeedMinRot
-Float (4) @ 0x308 : SpeedMaxRot
-Float (4) @ 0x30C : RPMMinRot
-Float (4) @ 0x310 : RPMMaxRot
-Float (4) @ 0x314 : DamageMinRot
-Float (4) @ 0x318 : DamageMaxRot
-Float (4) @ 0x31C : WheelFact
-Vector3 (12) @ 0x550 : WheelOffset
-Vector3 (12) @ 0x55C : DashPos
-Vector3 (12) @ 0x568 : RoofPos
-Vector3 (12) @ 0x574 : DashCamOffset
-Float (4) @ 0x5B8 : MaxSpeed
-Float (4) @ 0x5BC : MaxRPM
-Float (4) @ 0x5C0 : MinSpeed
-
-mmWaypointInstance (68) : mmStaticInstance (56)
-
-aiMap (184) : asNode (28)
-
-aiVehicleOpponent (8968) : asNode (28)
-
-aiVehicleInstance (36) : mmInstance (20)
-
-aiVehicleData (188) : asNode (28)
-Vector3 (12) @ 0x1C  : Size
-Vector3 (12) @ 0x28  : MaxAngClamp
-Vector3 (12) @ 0x40  : FLOff
-Vector3 (12) @ 0x4C  : FROff
-Vector3 (12) @ 0x58  : BLOff
-Vector3 (12) @ 0x64  : BROff
-Vector3 (12) @ 0x70  : BBLOff
-Vector3 (12) @ 0x7C  : BBROff
-Float (4) @ 0x88  : Mass
-Float (4) @ 0x8C  : Friction
-Float (4) @ 0x90  : Elasticity
-Float (4) @ 0x94  : MaxDamage
-Float (4) @ 0x98  : PtxThresh
-Float (4) @ 0x9C  : Spring
-Float (4) @ 0xA0  : Damping
-Float (4) @ 0xA4  : RubberSpring
-Float (4) @ 0xA8  : RubberDamp
-Float (4) @ 0xAC  : SuspensionLimit
-Float (4) @ 0xB0  : TireRadius
-SignedShort (2) @ 0xB4  : SoundId
-
-aiVehicleSpline (216) : asNode (28)
-
-aiGoalFollowWayPts (392) : asNode (28)
-
-mmCarSim (7956) : asNode (28)
-Vector3 (12) @ 0x2F4 : BodyCG
-asAero (112) @ 0x744 : AeroCollide
-Float (4) @ 0x82C : RedistHeight
-Float (4) @ 0x830 : RedistLongRatio
-SignedInt (4) @ 0x834 : DrivetrainType
-mmWheel (612) @ 0x908 : FrontLeft
-mmWheel (612) @ 0xDD0 : BackLeft
-mmEngine (120) @ 0x1618: Engine
-mmTransmission (208) @ 0x1690: Trans
-Vector3 (12) @ 0x1784: InertiaBox
-Float (4) @ 0x17A4: Drag
-Float (4) @ 0x17A8: Downforce
-Float (4) @ 0x17AC: BoundFriction
-Float (4) @ 0x17B0: BoundElasticity
-Float (4) @ 0x17B4: DriftTorque
-Float (4) @ 0x17BC: Mass
-Float (4) @ 0x181C: MaxDamage
-Float (4) @ 0x1820: MedDamage
-Vector3 (12) @ 0x182C: DamageSmokeOffset
-Float (4) @ 0x1848: CarFrictionHandling
-Float (4) @ 0x184C: LongSlideMultiplier
-Float (4) @ 0x1868: SlipPercentThresh
-asBirthRule (172) @ 0x1950: AsphaltRule
-asBirthRule (172) @ 0x19FC: OffroadRule
-asBirthRule (172) @ 0x1AA8: SlushRule
-asBirthRule (172) @ 0x1B54: SnowRule
-asBirthRule (172) @ 0x1CAC: SmokeRule
-Float (4) @ 0x1EAC: SpinStartTime
-Float (4) @ 0x1EB0: SpinEndTime
-Float (4) @ 0x1EB4: SpinStart
-Float (4) @ 0x1EB8: SpinStop
-Float (4) @ 0x1EBC: SpinFromMax
-Float (4) @ 0x1EC0: SpinFromMin
-Float (4) @ 0x1EC4: SpinToMin
-Float (4) @ 0x1EC8: SpinToMax
-Float (4) @ 0x1ECC: DriftThreshold
-Float (4) @ 0x1ED0: SpinThreshold
-Float (4) @ 0x1ED4: FrontDriftFricMultiplier
-Float (4) @ 0x1ED8: BackDriftFricMultiplier
-Float (4) @ 0x1EDC: FrontSpinFricMultiplier
-Float (4) @ 0x1EE0: BackSpinFricMultiplier
-Float (4) @ 0x1EE4: BrakeFrontFricMultiplier
-Float (4) @ 0x1EE8: BrakeBackFricMultiplier
-Float (4) @ 0x1EEC: SteerMultiplier
-Vector3 (12) @ 0x1EFC: DashCamHeadlightOffset
-Vector3 (12) @ 0x1F08: POVCamHeadlightOffset
-
-mmTransmission (208) : asNode (28)
-Float (4) @ 0x28  : UpshiftThreshold
-Float (4) @ 0x2C  : DownshiftThreshold
-SignedInt (4) @ 0x30  : NumGears
-Float[8] (32) @ 0x34  : GearRatios
-Float[8] (32) @ 0x54  : UpshiftRPM
-Float[8] (32) @ 0x74  : DownshiftRPM
-Float[8] (32) @ 0x94  : ManualGearRatios
-SignedInt (4) @ 0xB4  : ManualNumGears
-Float (4) @ 0xB8  : DownshiftBias
-
-mmCarModel (272) : mmInstance (20)
-
-mmCar (8792) : asNode (28)
-
-mmSkid (72) : mmMatrixInstance (68)
-
-mmSkidManager (100) : asNode (28)
-
-mmShard (100) : mmMatrixInstance (68)
-
-mmShardManager (80) : asNode (28)
-Float (4) @ 0x2C  : ImpThresh
-Float (4) @ 0x30  : ImpPerShard
-Float (4) @ 0x34  : VelXCoeff
-Float (4) @ 0x38  : VelYCoeff
-Float (4) @ 0x40  : AngVelCoeff
-
-mmTrailer (4548) : asNode (28)
-Vector3 (12) @ 0x244 : InertiaBox
-Float (4) @ 0x25C : BoundElasticity
-Float (4) @ 0x260 : BoundFriction
-Float (4) @ 0x264 : Mass
-mmWheel (612) @ 0x378 : WheelFL
-mmWheel (612) @ 0x840 : WheelBL
-
-mmOpponentCarAudio (216) : asNode (28)
-EngineAudioOpponent (80) @ 0x64  : m_EngineAudio
-UnsignedChar (1) @ 0xD4  : m_bFlags
-
-mmEngine (120) : asNode (28)
-Float (4) @ 0x1C  : MaxHorsePower
-Float (4) @ 0x20  : OptRPM
-Float (4) @ 0x24  : MaxRPM
-Float (4) @ 0x28  : GCL
-
-mmShock (148) : asLinearCS (132)
-
-mmAxle (152) : asLinearCS (132)
-
-mmWheel (612) : asLinearCS (132)
-Float (4) @ 0x90  : Spring
-Float (4) @ 0x94  : Damping
-Float (4) @ 0x98  : SteeringRatio
-Float (4) @ 0x9C  : BrakeRatio
-Float (4) @ 0xA0  : StaticFriction
-Float (4) @ 0xA4  : SuspensionLimit
-Float (4) @ 0xA8  : SuspensionBlend
-Float (4) @ 0xAC  : RenderableSuspensionLimit
-Float (4) @ 0x214 : RubberSpring
-Float (4) @ 0x218 : RubberDamp
-Float (4) @ 0x21C : OptimumSlipPercent
-Float (4) @ 0x220 : StaticFric
-Float (4) @ 0x224 : SlidingFric
-Float (4) @ 0x228 : RubberSpringLat
-Float (4) @ 0x22C : RubberDampLat
-
-mmDrivetrain (68) : asNode (28)
-Float (4) @ 0x3C  : dyn_coeff
-Float (4) @ 0x40  : stat_coeff
-
-VehGyro (48) : asNode (28)
-Float (4) @ 0x20  : WeebleTorque
-Float (4) @ 0x24  : WeebleY
-Float (4) @ 0x28  : Steer
-
-mmForce (40) : asNode (28)
-
-mmCarRoadFF (64) : asNode (28)
-
-mmPlayerCarAudio (248) : asNode (28)
-EngineAudio (140) @ 0x24  : m_EngineAudio
-UnsignedChar (1) @ 0xC6  : m_bFlags
-Float (4) @ 0xDC  : m_fHornVolume
-String (4) @ 0xF4  : m_pcHornWaveName
-
-mmNetworkCarAudio (204) : asNode (28)
-Float (4) @ 0x4C  : m_fHornVolume
-UnsignedChar (1) @ 0x5F  : m_bFlags
-EngineAudioOpponent (80) @ 0x6C  : m_EngineAudio
-
-EngineAudioOpponent (80) : asNode (28)
-Float (4) @ 0x1C  : m_fVolumeMultiplier
-Float (4) @ 0x20  : m_fPitchMultiplier
-Float (4) @ 0x28  : m_fMinPitch
-Float (4) @ 0x2C  : m_fMinVolume
-Float (4) @ 0x30  : m_fMaxPitch
-Float (4) @ 0x34  : m_fMaxVolume
-SignedShort (2) @ 0x44  : m_iSoundIndex
-String (4) @ 0x48  : m_pcEngineWave
-
-EngineAudio (140) : asNode (28)
-Float (4) @ 0x1C  : m_fVolumeMultiplier[kHiRpmIndex]
-Float (4) @ 0x20  : m_fVolumeMultiplier[kLowRpmIndex]
-Float (4) @ 0x24  : m_fPitchMultiplier[kHiRpmIndex]
-Float (4) @ 0x28  : m_fPitchMultiplier[kLowRpmIndex]
-Float (4) @ 0x38  : m_fMinPitch[kHiRpmIndex]
-Float (4) @ 0x3C  : m_fMinPitch[kLowRpmIndex]
-Float (4) @ 0x40  : m_fMinVolume[kHiRpmIndex]
-Float (4) @ 0x44  : m_fMinVolume[kLowRpmIndex]
-Float (4) @ 0x48  : m_fMaxPitch[kHiRpmIndex]
-Float (4) @ 0x4C  : m_fMaxPitch[kLowRpmIndex]
-Float (4) @ 0x50  : m_fMaxVolume[kHiRpmIndex]
-Float (4) @ 0x54  : m_fMaxVolume[kLowRpmIndex]
-Float (4) @ 0x68  : m_fClutchVolume
-String (4) @ 0x80  : m_pcHighRpmWave
-String (4) @ 0x84  : m_pcLowRpmWave
-String (4) @ 0x88  : m_pcClutchWave
-
-mmCullCity (209728) : asNode (28)
-
-asRenderWeb (35184) : asPortalWeb (34884)
-
-mmInstance (20) : Base (4)
-
-mmYInstance (44) : mmInstance (20)
-
-mmMatrixInstance (68) : mmInstance (20)
-
-mmShearInstance (72) : mmMatrixInstance (68)
-
-mmBuildingInstance (72) : mmMatrixInstance (68)
-
-mmStaticInstance (56) : mmYInstance (44)
-
-mmFacadeInstance (68) : mmStaticInstance (56)
-
-mmPed (52) : mmYInstance (44)
-
-mmPedManager (40) : asNode (28)
-
-asPortalWeb (34884) : asNode (28)
-
-UIBMLabel (156) : asNode (28)
-
-UIBMButton (236) : asNode (28)
-
-UIVScrollBar (264) : asNode (28)
-
-sfPointer (80) : asNode (28)
-
-TextDropWidget (52) : asNode (28)
-
-mmSlider (160) : asNode (28)
-
-VSWidget (204) : asNode (28)
-
-mmToggle2 (60) : asNode (28)
-
-mmToggle (52) : asNode (28)
-
-mmDropDown (196) : asNode (28)
-
-mmAnimMgr (9860) : asNode (28)
-
-mmBridgeSet (1076) : asNode (28)
-SignedInt (4) @ 0x40  : Triggered
-Float (4) @ 0x44  : TriggerTimeout
-Vector3 (12) @ 0x48  : TriggerPos
-Float (4) @ 0x54  : TriggerDist2
-SignedInt (4) @ 0x3F4 : InitialPos
-Float (4) @ 0x3F8 : DownInterval
-Float (4) @ 0x3FC : UpInterval
-
-mmBridgeMgr (9804) : asNode (28)
-mmBridgeSet[9] (9684) @ 0x24  : Bridges
-Float (4) @ 0x25F8: BridgeDelta
-Float (4) @ 0x25FC: BridgeOffGoal
-Float (4) @ 0x2600: BridgeOnGoal
-Float (4) @ 0x2604: BridgeOnDelay
-Float (4) @ 0x2608: BridgeOffDelay
-Float (4) @ 0x260C: GateDelta
-Float (4) @ 0x2610: GateOffGoal
-Float (4) @ 0x2614: GateOnGoal
-Float (4) @ 0x2618: GateOnDelay
-Float (4) @ 0x261C: GateOffDelay
-
-mmAnimDOF (152) : asNode (28)
-
-mmBoat (756) : asNode (28)
-
-mmBangerData (300) : asNode (28)
-Vector3 (12) @ 0x20  : CG
-Vector3 (12) @ 0x2C  : Size
-Vector3 (12) @ 0x38  : Offset
-Vector3 (12) @ 0x44  : GlowOffset
-Float (4) @ 0x50  : Mass
-Float (4) @ 0x54  : Elasticity
-Float (4) @ 0x58  : Friction
-Float (4) @ 0x5C  : ImpulseLimit2
-Float (4) @ 0x60  : YRadius
-asBirthRule (172) @ 0x64  : BirthRule
-SignedInt (4) @ 0x110 : TexNumber
-SignedInt (4) @ 0x114 : BillFlags
-SignedShort (2) @ 0x118 : SpinAxis
-SignedShort (2) @ 0x11A : Flash
-SignedShort (2) @ 0x11C : CollisionType
-SignedShort (2) @ 0x11E : NumParts
-String& (-2,2) (4) @ 0x120 : PartNames
-UnsignedInt (4) @ 0x124 : AudioId
-
-mmBangerDataManager (153800) : asNode (28)
-
-mmMiscData (95176) : mmInfoBase (136)
-mmRecord[60] (15840) @ 0x88  : CheckpointTime
-mmRecord[60] (15840) @ 0x3E68: BlitzTime
-mmRecord[60] (15840) @ 0x7C48: CircuitTime
-mmRecord[60] (15840) @ 0xBA28: CheckpointScore
-mmRecord[60] (15840) @ 0xF808: BlitzScore
-mmRecord[60] (15840) @ 0x135E8: CircuitScore
-
-mmPlayerConfig (28208) : mmInfoBase (136)
-SignedInt (4) @ 0x88  : MyVersion
-SignedInt (4) @ 0x8C  : Graphics.Tex
-SignedInt (4) @ 0x90  : Graphics.Obj
-SignedInt (4) @ 0x94  : Graphics.Shadows
-SignedInt (4) @ 0x98  : Graphics.EnvMap
-SignedInt (4) @ 0x9C  : Graphics.SphrMap
-SignedInt (4) @ 0xA0  : Graphics.Sky
-Float (4) @ 0xA4  : Graphics.FarClip
-Float (4) @ 0xA8  : Graphics.LightQuality
-Float (4) @ 0xC0  : Audio.WavVol
-Float (4) @ 0xC4  : Audio.CDVol
-Float (4) @ 0xC8  : Audio.Bal
-SignedInt (4) @ 0xCC  : Audio.Flags
-SignedInt (4) @ 0xD0  : Audio.Channels
-String (4) @ 0xD4  : Audio.DeviceName
-SignedInt (4) @ 0x1A0 : Controls.Input
-SignedInt (4) @ 0x1A4 : Controls.Transmission
-SignedInt (4) @ 0x1A8 : Controls.AutoReverseEnabled
-SignedInt (4) @ 0x1AC : Controls.UsePOVHat
-SignedInt (4) @ 0x1B0 : Controls.UseForceFeedback
-Float (4) @ 0x1B4 : Controls.ForceFeedbackScale
-Float (4) @ 0x1B8 : Controls.RoadForceScale
-Float (4) @ 0x1BC : Controls.PhysicsRealism
-Float (4) @ 0x1C0 : Controls.MouseSensitivity
-Float (4) @ 0x1C4 : Controls.JoyDeadZone
-Float (4) @ 0x1C8 : Controls.DiscreteSteeringDelta
-Float (4) @ 0x1D0 : Controls.UserSteeringSensitivity
-mmIODev[165] (27720) @ 0x1D8 : Controls.IODev
-SignedChar (1) @ 0x6E20: ViewSettings.CameraMode
-SignedChar (1) @ 0x6E21: ViewSettings.MapMode
-SignedChar (1) @ 0x6E22: ViewSettings.WFOV
-SignedChar (1) @ 0x6E23: ViewSettings.Dash
-SignedChar (1) @ 0x6E24: ViewSettings.Mirror
-SignedChar (1) @ 0x6E25: ViewSettings.ExternalView
-
-mmPlayerDirectory (228) : mmInfoBase (136)
-SignedInt (4) @ 0x88  : NumPlayers
-String& (-4,4) (4) @ 0x8C  : PlayerNames
-Char[80] (80) @ 0x94  : LastPlayer
-
-mmPlayerRecord (228) : mmInfoBase (136)
-Float (4) @ 0x88  : Time
-Char[80] (80) @ 0x8C  : CarName
-SignedInt (4) @ 0xDC  : Score
-SignedInt (4) @ 0xE0  : Passed
-
-mmPlayerData (8568) : mmInfoBase (136)
-Char[40] (40) @ 0x88  : PlayerName
-Char[40] (40) @ 0xB0  : NetName
-Char[40] (40) @ 0xD8  : FileName
-SignedChar (1) @ 0x100 : Difficulty
-SignedInt (4) @ 0x104 : Progress
-mmPlayerRecord[12] (2736) @ 0x108 : CheckpointRecords
-mmPlayerRecord[12] (2736) @ 0xBB8 : CircuitRecords
-mmPlayerRecord[12] (2736) @ 0x1668: BlitzRecords
-Char[80] (80) @ 0x2118: LastCarPicked
-SignedInt (4) @ 0x2168: LastCarColor
-SignedInt (4) @ 0x216C: LastGamePicked
-SignedInt (4) @ 0x2170: LastRacePicked
-
-mmInfoBase (136) : Base (4)
-
-mmRecord (264) : mmInfoBase (136)
-Float (4) @ 0x88  : TimeScore
-Char[80] (80) @ 0x8C  : CarName
-Char[40] (40) @ 0xDC  : Name
-SignedInt (4) @ 0x104 : Passed
-
-mmPropInfo (148) : mmInfoBase (136)
-Float (4) @ 0x88  : Spacing
-SignedInt (4) @ 0x8C  : NumThings
-String& (-4,4) (4) @ 0x90  : Things
-
-mmRoadSide (736) : mmInfoBase (136)
-Float (4) @ 0x88  : Sidewalk
-Float (4) @ 0x8C  : Curb
-mmPropInfo (148) @ 0x90  : Bldgs
-mmPropInfo (148) @ 0x124 : Signs
-mmPropInfo (148) @ 0x1B8 : Trees
-mmPropInfo (148) @ 0x24C : Posts
-
-mmRoadSect (1740) : mmInfoBase (136)
-SignedInt (4) @ 0x650 : NumVertexs
-SignedInt (4) @ 0x654 : NumLanes[0]
-SignedInt (4) @ 0x658 : NumLanes[1]
-SignedInt (4) @ 0x65C : NumSidewalks[0]
-SignedInt (4) @ 0x660 : NumSidewalks[1]
-SignedInt (4) @ 0x664 : TotalVertexs
-Vector3& (-4,4) (4) @ 0x668 : Vertexs
-Vector3& (-28,4) (4) @ 0x66C : Normals
-UnsignedInt& (-32,4) (4) @ 0x670 : RoomIds
-SignedInt (4) @ 0x674 : IntersectionType[0]
-SignedInt (4) @ 0x678 : IntersectionType[1]
-Vector3 (12) @ 0x67C : StopLightPos[0]
-Vector3 (12) @ 0x688 : StopLightPos[1]
-Vector3 (12) @ 0x694 : StopLightPos[2]
-Vector3 (12) @ 0x6A0 : StopLightPos[3]
-SignedInt (4) @ 0x6AC : Blocked[0]
-SignedInt (4) @ 0x6B0 : Blocked[1]
-SignedInt (4) @ 0x6B4 : PedBlocked[0]
-SignedInt (4) @ 0x6B8 : PedBlocked[1]
-String& (4,4) (4) @ 0x6BC : StopLightName
-SignedInt (4) @ 0x6C4 : Divided
-SignedInt (4) @ 0x6C8 : Alley
-
-mmPhysicsMGR (536) : asNode (28)
-Float (4) @ 0x2C  : Gravity
-
-asInertialCS (420) : asLinearCS (132)
-Float (4) @ 0x19C : MaxAngVelocity
-
-Joint3Dof (220) : asNode (28)
-
-asOverSample (44) : asNode (28)
-Float (4) @ 0x1C  : SampleStep
-SignedInt (4) @ 0x20  : MaxSamples
-
-asAero (112) : asNode (28)
-Vector3 (12) @ 0x20  : CDamp
-Vector3 (12) @ 0x2C  : VelDamp
-Vector3 (12) @ 0x38  : Vel2Damp
-Vector3 (12) @ 0x44  : AngCDamp
-Vector3 (12) @ 0x50  : AngVelDamp
-Vector3 (12) @ 0x5C  : AngVel2Damp
-
-mmInput (576) : asNode (28)
-Float (4) @ 0x1B8 : MouseSensitivity
-Float (4) @ 0x1C0 : DiscreteSteeringDeltaIn
-Float (4) @ 0x1C4 : DiscreteSteeringDeltaOut
-
-mmIODev (168) : Root (0)
-SignedInt (4) @ 0x88  : ioType
-SignedInt (4) @ 0x98  : Device
-SignedInt (4) @ 0x9C  : Component
-
-AudManager (160) : asNode (28)
-
-PovCamCS (320) : CarCamCS (276)
-Vector3 (12) @ 0x114 : m_Offset
-Float (4) @ 0x120 : POVJitterAmp
-Float (4) @ 0x130 : m_Pitch
-
-TrackCamCS (796) : CarCamCS (276)
-Vector3 (12) @ 0x118 : m_Offset
-SignedInt (4) @ 0x124 : m_CollideType
-SignedInt (4) @ 0x128 : m_MinMaxOn
-SignedInt (4) @ 0x12C : m_TrackBreak
-Float (4) @ 0x130 : m_MinAppXZPos
-Float (4) @ 0x134 : m_MaxAppXZPos
-Float (4) @ 0x138 : m_MinSpeed
-Float (4) @ 0x13C : m_MaxSpeed
-Float (4) @ 0x140 : m_AppInc
-Float (4) @ 0x144 : m_AppDec
-Float (4) @ 0x148 : m_MinHardSteer
-Float (4) @ 0x14C : m_DriftDelay
-Float (4) @ 0x150 : m_VertOffset
-Float (4) @ 0x154 : m_FrontRate
-Float (4) @ 0x158 : m_RearRate
-Float (4) @ 0x15C : m_FlipDelay
-SignedInt (4) @ 0x160 : m_SteerOn
-Float (4) @ 0x164 : m_SteerMin
-Float (4) @ 0x168 : m_SteerAmt
-
-mmViewCS (188) : asLinearCS (132)
-
-PostCamCS (296) : CarCamCS (276)
-
-PreCamCS (300) : CarCamCS (276)
-
-PointCamCS (320) : CarCamCS (276)
-
-AICamCS (284) : CarCamCS (276)
-
-PolarCamCS (300) : CarCamCS (276)
-
-CarCamCS (276) : AppCamCS (272)
-
-BaseCamCS (152) : asNode (28)
-Float (4) @ 0x84  : m_BlendTime
-Float (4) @ 0x88  : m_BlendGoal
-Float (4) @ 0x8C  : m_cameraFOV
-Float (4) @ 0x90  : m_cameraNear
-Float (4) @ 0x94  : m_cameraFar
-
-AppCamCS (272) : BaseCamCS (152)
-Vector3 (12) @ 0x9C  : TrackTo
-SignedInt (4) @ 0xA8  : m_ApproachOn
-SignedInt (4) @ 0xAC  : m_AppAppOn
-Float (4) @ 0xB0  : m_AppRot
-Float (4) @ 0xB4  : m_AppXRot
-Float (4) @ 0xB8  : m_AppYPos
-Float (4) @ 0xBC  : m_AppXZPos
-Float (4) @ 0xC0  : m_AppApp
-Float (4) @ 0xC4  : m_AppRotMin
-Float (4) @ 0xC8  : m_AppPosMin
-Float (4) @ 0xCC  : m_LookAbove
-Float (4) @ 0xD4  : m_MaxDist
-Float (4) @ 0xD8  : m_MinDist
-Float (4) @ 0xDC  : m_LookAt
-
-Spline (112) : asNode (28)
-
-mmNumber (120) : asNode (28)
-
-asParticles (104) : asNode (28)
-
-asBirthRule (172) : Base (4)
-Vector3 (12) @ 0x1C  : Position
-Vector3 (12) @ 0x28  : PositionVar
-Vector3 (12) @ 0x34  : Velocity
-Vector3 (12) @ 0x40  : VelocityVar
-Float (4) @ 0x4C  : Life
-Float (4) @ 0x50  : LifeVar
-Float (4) @ 0x54  : Mass
-Float (4) @ 0x58  : MassVar
-Float (4) @ 0x5C  : Radius
-Float (4) @ 0x60  : RadiusVar
-Float (4) @ 0x64  : DRadius
-Float (4) @ 0x68  : DRadiusVar
-Float (4) @ 0x6C  : Drag
-Float (4) @ 0x70  : DragVar
-Float (4) @ 0x7C  : SpewRate
-Float (4) @ 0x80  : SpewTimeLimit
-Float (4) @ 0x84  : Gravity
-SignedInt (4) @ 0x88  : DAlpha
-SignedInt (4) @ 0x8C  : DAlphaVar
-SignedInt (4) @ 0x90  : DRotation
-SignedInt (4) @ 0x94  : DRotationVar
-SignedInt (4) @ 0x98  : TexFrameStart
-SignedInt (4) @ 0x9C  : TexFrameEnd
-SignedInt (4) @ 0xA0  : InitialBlast
-SignedInt (4) @ 0xA4  : BirthFlags
-
-asSimulation (652) : asNode (28)
-
-asNode (28) : asCullable (4)
-asNode* (4) @ 0x4   : NextNode
-asNode* (4) @ 0x8   : ChildNode
-asNode* (4) @ 0xC   : ParentNode
-String (4) @ 0x10  : NodeName
-SignedInt (4) @ 0x14  : Flags
-
-asCullManager (172) : asNode (28)
-
-asCullable (4) : Base (4)
-
-asLamp (44) : asNode (28)
-
-asLinearCS (132) : asNode (28)
-Matrix34 (48) @ 0x1C  : Matrix
-SignedInt (4) @ 0x7C  : Global
-asLinearCS* (4) @ 0x80  : Inherit
-
-asCamera (392) : asNode (28)
-
-asForm (36) : asNode (28)
-
-asDofCS (244) : asLinearCS (132)
-
-asViewCS (288) : asLinearCS (132)
-
-Matrix34 (48) : Root (0)
-Vector3 (12) @ 0x0   : a
-Vector3 (12) @ 0xC   : b
-Vector3 (12) @ 0x18  : c
-Vector3 (12) @ 0x24  : d
+mmGameManager : asNode (56, 84);
+
+mmInterface : asNode (219156, 219184);
+
+mmGame : asNode (124236, 124264);
+
+mmGameEdit : asNode (124692, 124720);
+
+mmSingleBlitz : asNode (124308, 124336);
+
+mmSingleCircuit : asNode (124372, 124400);
+
+mmGameSingle : asNode (124364, 124392);
+
+mmMultiBlitz : asNode (126572, 126600);
+
+mmMultiCircuit : asNode (126564, 126592);
+
+mmMultiCR : asNode (126684, 126712);
+
+mmMultiRace : asNode (126564, 126592);
+
+mmHudMap : asNode (684, 712);
+
+mmPlayer : asNode (18060, 18088) {
+    float ScoreWeight @ 0x45C8
+    int SpeedSensitive @ 0x4600
+    float SpeedBaseLow @ 0x4604
+    float SpeedBaseHi @ 0x4608
+    float DiscreteSteeringDeltaInHi @ 0x460C
+    float DiscreteSteeringDeltaOutHi @ 0x4610
+    float DiscreteSteeringFilterHi @ 0x4614
+    float DiscreteSteeringDeltaInLo @ 0x4618
+    float DiscreteSteeringDeltaOutLo @ 0x461C
+    float DiscreteSteeringFilterLo @ 0x4620
+    float MouseSensitivityLow @ 0x4624
+    float MouseSteerFilterLow @ 0x4628
+    float MouseSensitivityHi @ 0x462C
+    float MouseSteerFilterHi @ 0x4630
+    short JoyApp @ 0x4638
+    float JoySteerApproachOutHi @ 0x463C
+    float JoySteerApproachInHi @ 0x4640
+    float JoySteerAppApp @ 0x4644
+    float JoySteerApproachOutLo @ 0x464C
+    float JoySteerApproachInLo @ 0x4650
+    float JoySteerFilterLow @ 0x4658
+    float JoySensitivityLow @ 0x465C
+    float JoySteerFilterHi @ 0x4660
+    float JoySensitivityHi @ 0x4664
+    short WheelApp @ 0x4670
+    float WheelSteerApproachOutHi @ 0x4674
+    float WheelSteerApproachInHi @ 0x4678
+    float WheelSteerAppApp @ 0x467C
+    float WheelSteerApproachOutLo @ 0x4684
+    float WheelSteerApproachInLo @ 0x4688
+    float WheelSteerFilterLow @ 0x4690
+    float WheelSensitivityLow @ 0x4694
+    float WheelSteerFilterHi @ 0x4698
+    float WheelSensitivityHi @ 0x469C
+}
+
+mmHUD : asLinearCS (2836, 2968);
+
+mmGameMulti : asNode (126556, 126584);
+
+mmDashView : asLinearCS (1348, 1480) {
+    Vector3 SpeedPos @ 0x2E0
+    Vector3 RPMPos @ 0x2EC
+    Vector3 DamagePos @ 0x2F8
+    float SpeedMinRot @ 0x304
+    float SpeedMaxRot @ 0x308
+    float RPMMinRot @ 0x30C
+    float RPMMaxRot @ 0x310
+    float DamageMinRot @ 0x314
+    float DamageMaxRot @ 0x318
+    float WheelFact @ 0x31C
+    Vector3 WheelOffset @ 0x550
+    Vector3 DashPos @ 0x55C
+    Vector3 RoofPos @ 0x568
+    Vector3 DashCamOffset @ 0x574
+    float MaxSpeed @ 0x5B8
+    float MaxRPM @ 0x5BC
+    float MinSpeed @ 0x5C0
+}
+
+mmWaypointInstance : mmStaticInstance (12, 68);
+
+aiMap : asNode (156, 184);
+
+aiVehicleOpponent : asNode (8940, 8968);
+
+aiVehicleInstance : mmInstance (16, 36);
+
+aiVehicleData : asNode (160, 188) {
+    Vector3 Size @ 0x1C
+    Vector3 MaxAngClamp @ 0x28
+    Vector3 FLOff @ 0x40
+    Vector3 FROff @ 0x4C
+    Vector3 BLOff @ 0x58
+    Vector3 BROff @ 0x64
+    Vector3 BBLOff @ 0x70
+    Vector3 BBROff @ 0x7C
+    float Mass @ 0x88
+    float Friction @ 0x8C
+    float Elasticity @ 0x90
+    float MaxDamage @ 0x94
+    float PtxThresh @ 0x98
+    float Spring @ 0x9C
+    float Damping @ 0xA0
+    float RubberSpring @ 0xA4
+    float RubberDamp @ 0xA8
+    float SuspensionLimit @ 0xAC
+    float TireRadius @ 0xB0
+    short SoundId @ 0xB4
+}
+
+aiVehicleSpline : asNode (188, 216);
+
+aiGoalFollowWayPts : asNode (364, 392);
+
+mmCarSim : asNode (7928, 7956) {
+    Vector3 BodyCG @ 0x2F4
+    asAero AeroCollide @ 0x744
+    float RedistHeight @ 0x82C
+    float RedistLongRatio @ 0x830
+    int DrivetrainType @ 0x834
+    mmWheel FrontLeft @ 0x908
+    mmWheel BackLeft @ 0xDD0
+    mmEngine Engine @ 0x1618
+    mmTransmission Trans @ 0x1690
+    Vector3 InertiaBox @ 0x1784
+    float Drag @ 0x17A4
+    float Downforce @ 0x17A8
+    float BoundFriction @ 0x17AC
+    float BoundElasticity @ 0x17B0
+    float DriftTorque @ 0x17B4
+    float Mass @ 0x17BC
+    float MaxDamage @ 0x181C
+    float MedDamage @ 0x1820
+    Vector3 DamageSmokeOffset @ 0x182C
+    float CarFrictionHandling @ 0x1848
+    float LongSlideMultiplier @ 0x184C
+    float SlipPercentThresh @ 0x1868
+    asBirthRule AsphaltRule @ 0x1950
+    asBirthRule OffroadRule @ 0x19FC
+    asBirthRule SlushRule @ 0x1AA8
+    asBirthRule SnowRule @ 0x1B54
+    asBirthRule SmokeRule @ 0x1CAC
+    float SpinStartTime @ 0x1EAC
+    float SpinEndTime @ 0x1EB0
+    float SpinStart @ 0x1EB4
+    float SpinStop @ 0x1EB8
+    float SpinFromMax @ 0x1EBC
+    float SpinFromMin @ 0x1EC0
+    float SpinToMin @ 0x1EC4
+    float SpinToMax @ 0x1EC8
+    float DriftThreshold @ 0x1ECC
+    float SpinThreshold @ 0x1ED0
+    float FrontDriftFricMultiplier @ 0x1ED4
+    float BackDriftFricMultiplier @ 0x1ED8
+    float FrontSpinFricMultiplier @ 0x1EDC
+    float BackSpinFricMultiplier @ 0x1EE0
+    float BrakeFrontFricMultiplier @ 0x1EE4
+    float BrakeBackFricMultiplier @ 0x1EE8
+    float SteerMultiplier @ 0x1EEC
+    Vector3 DashCamHeadlightOffset @ 0x1EFC
+    Vector3 POVCamHeadlightOffset @ 0x1F08
+}
+
+mmTransmission : asNode (180, 208) {
+    float UpshiftThreshold @ 0x28
+    float DownshiftThreshold @ 0x2C
+    int NumGears @ 0x30
+    float[8] GearRatios @ 0x34
+    float[8] UpshiftRPM @ 0x54
+    float[8] DownshiftRPM @ 0x74
+    float[8] ManualGearRatios @ 0x94
+    int ManualNumGears @ 0xB4
+    float DownshiftBias @ 0xB8
+}
+
+mmCarModel : mmInstance (252, 272);
+
+mmCar : asNode (8764, 8792);
+
+mmSkid : mmMatrixInstance (4, 72);
+
+mmSkidManager : asNode (72, 100);
+
+mmShard : mmMatrixInstance (32, 100);
+
+mmShardManager : asNode (52, 80) {
+    float ImpThresh @ 0x2C
+    float ImpPerShard @ 0x30
+    float VelXCoeff @ 0x34
+    float VelYCoeff @ 0x38
+    float AngVelCoeff @ 0x40
+}
+
+mmTrailer : asNode (4520, 4548) {
+    Vector3 InertiaBox @ 0x244
+    float BoundElasticity @ 0x25C
+    float BoundFriction @ 0x260
+    float Mass @ 0x264
+    mmWheel WheelFL @ 0x378
+    mmWheel WheelBL @ 0x840
+}
+
+mmOpponentCarAudio : asNode (188, 216) {
+    EngineAudioOpponent m_EngineAudio @ 0x64
+    unsigned char m_bFlags @ 0xD4
+}
+
+mmEngine : asNode (92, 120) {
+    float MaxHorsePower @ 0x1C
+    float OptRPM @ 0x20
+    float MaxRPM @ 0x24
+    float GCL @ 0x28
+}
+
+mmShock : asLinearCS (16, 148);
+
+mmAxle : asLinearCS (20, 152);
+
+mmWheel : asLinearCS (480, 612) {
+    float Spring @ 0x90
+    float Damping @ 0x94
+    float SteeringRatio @ 0x98
+    float BrakeRatio @ 0x9C
+    float StaticFriction @ 0xA0
+    float SuspensionLimit @ 0xA4
+    float SuspensionBlend @ 0xA8
+    float RenderableSuspensionLimit @ 0xAC
+    float RubberSpring @ 0x214
+    float RubberDamp @ 0x218
+    float OptimumSlipPercent @ 0x21C
+    float StaticFric @ 0x220
+    float SlidingFric @ 0x224
+    float RubberSpringLat @ 0x228
+    float RubberDampLat @ 0x22C
+}
+
+mmDrivetrain : asNode (40, 68) {
+    float dyn_coeff @ 0x3C
+    float stat_coeff @ 0x40
+}
+
+VehGyro : asNode (20, 48) {
+    float WeebleTorque @ 0x20
+    float WeebleY @ 0x24
+    float Steer @ 0x28
+}
+
+mmForce : asNode (12, 40);
+
+mmCarRoadFF : asNode (36, 64);
+
+mmPlayerCarAudio : asNode (220, 248) {
+    EngineAudio m_EngineAudio @ 0x24
+    unsigned char m_bFlags @ 0xC6
+    float m_fHornVolume @ 0xDC
+    string m_pcHornWaveName @ 0xF4
+}
+
+mmNetworkCarAudio : asNode (176, 204) {
+    float m_fHornVolume @ 0x4C
+    unsigned char m_bFlags @ 0x5F
+    EngineAudioOpponent m_EngineAudio @ 0x6C
+}
+
+EngineAudioOpponent : asNode (52, 80) {
+    float m_fVolumeMultiplier @ 0x1C
+    float m_fPitchMultiplier @ 0x20
+    float m_fMinPitch @ 0x28
+    float m_fMinVolume @ 0x2C
+    float m_fMaxPitch @ 0x30
+    float m_fMaxVolume @ 0x34
+    short m_iSoundIndex @ 0x44
+    string m_pcEngineWave @ 0x48
+}
+
+EngineAudio : asNode (112, 140) {
+    float m_fVolumeMultiplier[kHiRpmIndex] @ 0x1C
+    float m_fVolumeMultiplier[kLowRpmIndex] @ 0x20
+    float m_fPitchMultiplier[kHiRpmIndex] @ 0x24
+    float m_fPitchMultiplier[kLowRpmIndex] @ 0x28
+    float m_fMinPitch[kHiRpmIndex] @ 0x38
+    float m_fMinPitch[kLowRpmIndex] @ 0x3C
+    float m_fMinVolume[kHiRpmIndex] @ 0x40
+    float m_fMinVolume[kLowRpmIndex] @ 0x44
+    float m_fMaxPitch[kHiRpmIndex] @ 0x48
+    float m_fMaxPitch[kLowRpmIndex] @ 0x4C
+    float m_fMaxVolume[kHiRpmIndex] @ 0x50
+    float m_fMaxVolume[kLowRpmIndex] @ 0x54
+    float m_fClutchVolume @ 0x68
+    string m_pcHighRpmWave @ 0x80
+    string m_pcLowRpmWave @ 0x84
+    string m_pcClutchWave @ 0x88
+}
+
+mmCullCity : asNode (209700, 209728);
+
+asRenderWeb : asPortalWeb (300, 35184);
+
+mmInstance : Base (16, 20);
+
+mmYInstance : mmInstance (24, 44);
+
+mmMatrixInstance : mmInstance (48, 68);
+
+mmShearInstance : mmMatrixInstance (4, 72);
+
+mmBuildingInstance : mmMatrixInstance (4, 72);
+
+mmStaticInstance : mmYInstance (12, 56);
+
+mmFacadeInstance : mmStaticInstance (12, 68);
+
+mmPed : mmYInstance (8, 52);
+
+mmPedManager : asNode (12, 40);
+
+asPortalWeb : asNode (34856, 34884);
+
+UIBMLabel : asNode (128, 156);
+
+UIBMButton : asNode (208, 236);
+
+UIVScrollBar : asNode (236, 264);
+
+sfPointer : asNode (52, 80);
+
+TextDropWidget : asNode (24, 52);
+
+mmSlider : asNode (132, 160);
+
+VSWidget : asNode (176, 204);
+
+mmToggle2 : asNode (32, 60);
+
+mmToggle : asNode (24, 52);
+
+mmDropDown : asNode (168, 196);
+
+mmAnimMgr : asNode (9832, 9860);
+
+mmBridgeSet : asNode (1048, 1076) {
+    int Triggered @ 0x40
+    float TriggerTimeout @ 0x44
+    Vector3 TriggerPos @ 0x48
+    float TriggerDist2 @ 0x54
+    int InitialPos @ 0x3F4
+    float DownInterval @ 0x3F8
+    float UpInterval @ 0x3FC
+}
+
+mmBridgeMgr : asNode (9776, 9804) {
+    mmBridgeSet[9] Bridges @ 0x24
+    float BridgeDelta @ 0x25F8
+    float BridgeOffGoal @ 0x25FC
+    float BridgeOnGoal @ 0x2600
+    float BridgeOnDelay @ 0x2604
+    float BridgeOffDelay @ 0x2608
+    float GateDelta @ 0x260C
+    float GateOffGoal @ 0x2610
+    float GateOnGoal @ 0x2614
+    float GateOnDelay @ 0x2618
+    float GateOffDelay @ 0x261C
+}
+
+mmAnimDOF : asNode (124, 152);
+
+mmBoat : asNode (728, 756);
+
+mmBangerData : asNode (272, 300) {
+    Vector3 CG @ 0x20
+    Vector3 Size @ 0x2C
+    Vector3 Offset @ 0x38
+    Vector3 GlowOffset @ 0x44
+    float Mass @ 0x50
+    float Elasticity @ 0x54
+    float Friction @ 0x58
+    float ImpulseLimit2 @ 0x5C
+    float YRadius @ 0x60
+    asBirthRule BirthRule @ 0x64
+    int TexNumber @ 0x110
+    int BillFlags @ 0x114
+    short SpinAxis @ 0x118
+    short Flash @ 0x11A
+    short CollisionType @ 0x11C
+    short NumParts @ 0x11E
+    string [NumParts] PartNames @ 0x120
+    unsigned int AudioId @ 0x124
+}
+
+mmBangerDataManager : asNode (153772, 153800);
+
+mmMiscData : mmInfoBase (95040, 95176) {
+    mmRecord[60] CheckpointTime @ 0x88
+    mmRecord[60] BlitzTime @ 0x3E68
+    mmRecord[60] CircuitTime @ 0x7C48
+    mmRecord[60] CheckpointScore @ 0xBA28
+    mmRecord[60] BlitzScore @ 0xF808
+    mmRecord[60] CircuitScore @ 0x135E8
+}
+
+mmPlayerConfig : mmInfoBase (28072, 28208) {
+    int MyVersion @ 0x88
+    int Graphics.Tex @ 0x8C
+    int Graphics.Obj @ 0x90
+    int Graphics.Shadows @ 0x94
+    int Graphics.EnvMap @ 0x98
+    int Graphics.SphrMap @ 0x9C
+    int Graphics.Sky @ 0xA0
+    float Graphics.FarClip @ 0xA4
+    float Graphics.LightQuality @ 0xA8
+    float Audio.WavVol @ 0xC0
+    float Audio.CDVol @ 0xC4
+    float Audio.Bal @ 0xC8
+    int Audio.Flags @ 0xCC
+    int Audio.Channels @ 0xD0
+    string Audio.DeviceName @ 0xD4
+    int Controls.Input @ 0x1A0
+    int Controls.Transmission @ 0x1A4
+    int Controls.AutoReverseEnabled @ 0x1A8
+    int Controls.UsePOVHat @ 0x1AC
+    int Controls.UseForceFeedback @ 0x1B0
+    float Controls.ForceFeedbackScale @ 0x1B4
+    float Controls.RoadForceScale @ 0x1B8
+    float Controls.PhysicsRealism @ 0x1BC
+    float Controls.MouseSensitivity @ 0x1C0
+    float Controls.JoyDeadZone @ 0x1C4
+    float Controls.DiscreteSteeringDelta @ 0x1C8
+    float Controls.UserSteeringSensitivity @ 0x1D0
+    mmIODev[165] Controls.IODev @ 0x1D8
+    signed char ViewSettings.CameraMode @ 0x6E20
+    signed char ViewSettings.MapMode @ 0x6E21
+    signed char ViewSettings.WFOV @ 0x6E22
+    signed char ViewSettings.Dash @ 0x6E23
+    signed char ViewSettings.Mirror @ 0x6E24
+    signed char ViewSettings.ExternalView @ 0x6E25
+}
+
+mmPlayerDirectory : mmInfoBase (92, 228) {
+    int NumPlayers @ 0x88
+    string [NumPlayers] PlayerNames @ 0x8C
+    char[80] LastPlayer @ 0x94
+}
+
+mmPlayerRecord : mmInfoBase (92, 228) {
+    float Time @ 0x88
+    char[80] CarName @ 0x8C
+    int Score @ 0xDC
+    int Passed @ 0xE0
+}
+
+mmPlayerData : mmInfoBase (8432, 8568) {
+    char[40] PlayerName @ 0x88
+    char[40] NetName @ 0xB0
+    char[40] FileName @ 0xD8
+    signed char Difficulty @ 0x100
+    int Progress @ 0x104
+    mmPlayerRecord[12] CheckpointRecords @ 0x108
+    mmPlayerRecord[12] CircuitRecords @ 0xBB8
+    mmPlayerRecord[12] BlitzRecords @ 0x1668
+    char[80] LastCarPicked @ 0x2118
+    int LastCarColor @ 0x2168
+    int LastGamePicked @ 0x216C
+    int LastRacePicked @ 0x2170
+}
+
+mmInfoBase : Base (132, 136);
+
+mmRecord : mmInfoBase (128, 264) {
+    float TimeScore @ 0x88
+    char[80] CarName @ 0x8C
+    char[40] Name @ 0xDC
+    int Passed @ 0x104
+}
+
+mmPropInfo : mmInfoBase (12, 148) {
+    float Spacing @ 0x88
+    int NumThings @ 0x8C
+    string [NumThings] Things @ 0x90
+}
+
+mmRoadSide : mmInfoBase (600, 736) {
+    float Sidewalk @ 0x88
+    float Curb @ 0x8C
+    mmPropInfo Bldgs @ 0x90
+    mmPropInfo Signs @ 0x124
+    mmPropInfo Trees @ 0x1B8
+    mmPropInfo Posts @ 0x24C
+}
+
+mmRoadSect : mmInfoBase (1604, 1740) {
+    int NumVertexs @ 0x650
+    int NumLanes[0] @ 0x654
+    int NumLanes[1] @ 0x658
+    int NumSidewalks[0] @ 0x65C
+    int NumSidewalks[1] @ 0x660
+    int TotalVertexs @ 0x664
+    Vector3 [TotalVertexs] Vertexs @ 0x668
+    Vector3 [NumVertexs] Normals @ 0x66C
+    unsigned int [NumVertexs] RoomIds @ 0x670
+    int IntersectionType[0] @ 0x674
+    int IntersectionType[1] @ 0x678
+    Vector3 StopLightPos[0] @ 0x67C
+    Vector3 StopLightPos[1] @ 0x688
+    Vector3 StopLightPos[2] @ 0x694
+    Vector3 StopLightPos[3] @ 0x6A0
+    int Blocked[0] @ 0x6AC
+    int Blocked[1] @ 0x6B0
+    int PedBlocked[0] @ 0x6B4
+    int PedBlocked[1] @ 0x6B8
+    string [4,4] StopLightName @ 0x6BC
+    int Divided @ 0x6C4
+    int Alley @ 0x6C8
+}
+
+mmPhysicsMGR : asNode (508, 536) {
+    float Gravity @ 0x2C
+}
+
+asInertialCS : asLinearCS (288, 420) {
+    float MaxAngVelocity @ 0x19C
+}
+
+Joint3Dof : asNode (192, 220);
+
+asOverSample : asNode (16, 44) {
+    float SampleStep @ 0x1C
+    int MaxSamples @ 0x20
+}
+
+asAero : asNode (84, 112) {
+    Vector3 CDamp @ 0x20
+    Vector3 VelDamp @ 0x2C
+    Vector3 Vel2Damp @ 0x38
+    Vector3 AngCDamp @ 0x44
+    Vector3 AngVelDamp @ 0x50
+    Vector3 AngVel2Damp @ 0x5C
+}
+
+mmInput : asNode (548, 576) {
+    float MouseSensitivity @ 0x1B8
+    float DiscreteSteeringDeltaIn @ 0x1C0
+    float DiscreteSteeringDeltaOut @ 0x1C4
+}
+
+mmIODev : Root (168, 168) {
+    int ioType @ 0x88
+    int Device @ 0x98
+    int Component @ 0x9C
+}
+
+AudManager : asNode (132, 160);
+
+PovCamCS : CarCamCS (44, 320) {
+    Vector3 m_Offset @ 0x114
+    float POVJitterAmp @ 0x120
+    float m_Pitch @ 0x130
+}
+
+TrackCamCS : CarCamCS (520, 796) {
+    Vector3 m_Offset @ 0x118
+    int m_CollideType @ 0x124
+    int m_MinMaxOn @ 0x128
+    int m_TrackBreak @ 0x12C
+    float m_MinAppXZPos @ 0x130
+    float m_MaxAppXZPos @ 0x134
+    float m_MinSpeed @ 0x138
+    float m_MaxSpeed @ 0x13C
+    float m_AppInc @ 0x140
+    float m_AppDec @ 0x144
+    float m_MinHardSteer @ 0x148
+    float m_DriftDelay @ 0x14C
+    float m_VertOffset @ 0x150
+    float m_FrontRate @ 0x154
+    float m_RearRate @ 0x158
+    float m_FlipDelay @ 0x15C
+    int m_SteerOn @ 0x160
+    float m_SteerMin @ 0x164
+    float m_SteerAmt @ 0x168
+}
+
+mmViewCS : asLinearCS (56, 188);
+
+PostCamCS : CarCamCS (20, 296);
+
+PreCamCS : CarCamCS (24, 300);
+
+PointCamCS : CarCamCS (44, 320);
+
+AICamCS : CarCamCS (8, 284);
+
+PolarCamCS : CarCamCS (24, 300);
+
+CarCamCS : AppCamCS (4, 276);
+
+BaseCamCS : asNode (124, 152) {
+    float m_BlendTime @ 0x84
+    float m_BlendGoal @ 0x88
+    float m_cameraFOV @ 0x8C
+    float m_cameraNear @ 0x90
+    float m_cameraFar @ 0x94
+}
+
+AppCamCS : BaseCamCS (120, 272) {
+    Vector3 TrackTo @ 0x9C
+    int m_ApproachOn @ 0xA8
+    int m_AppAppOn @ 0xAC
+    float m_AppRot @ 0xB0
+    float m_AppXRot @ 0xB4
+    float m_AppYPos @ 0xB8
+    float m_AppXZPos @ 0xBC
+    float m_AppApp @ 0xC0
+    float m_AppRotMin @ 0xC4
+    float m_AppPosMin @ 0xC8
+    float m_LookAbove @ 0xCC
+    float m_MaxDist @ 0xD4
+    float m_MinDist @ 0xD8
+    float m_LookAt @ 0xDC
+}
+
+Spline : asNode (84, 112);
+
+mmNumber : asNode (92, 120);
+
+asParticles : asNode (76, 104);
+
+asBirthRule : Base (168, 172) {
+    Vector3 Position @ 0x1C
+    Vector3 PositionVar @ 0x28
+    Vector3 Velocity @ 0x34
+    Vector3 VelocityVar @ 0x40
+    float Life @ 0x4C
+    float LifeVar @ 0x50
+    float Mass @ 0x54
+    float MassVar @ 0x58
+    float Radius @ 0x5C
+    float RadiusVar @ 0x60
+    float DRadius @ 0x64
+    float DRadiusVar @ 0x68
+    float Drag @ 0x6C
+    float DragVar @ 0x70
+    float SpewRate @ 0x7C
+    float SpewTimeLimit @ 0x80
+    float Gravity @ 0x84
+    int DAlpha @ 0x88
+    int DAlphaVar @ 0x8C
+    int DRotation @ 0x90
+    int DRotationVar @ 0x94
+    int TexFrameStart @ 0x98
+    int TexFrameEnd @ 0x9C
+    int InitialBlast @ 0xA0
+    int BirthFlags @ 0xA4
+}
+
+asSimulation : asNode (624, 652);
+
+asNode : asCullable (24, 28) {
+    asNode* NextNode @ 0x4
+    asNode* ChildNode @ 0x8
+    asNode* ParentNode @ 0xC
+    string NodeName @ 0x10
+    int Flags @ 0x14
+}
+
+asCullManager : asNode (144, 172);
+
+asCullable : Base (0, 4);
+
+asLamp : asNode (16, 44);
+
+asLinearCS : asNode (104, 132) {
+    Matrix34 Matrix @ 0x1C
+    int Global @ 0x7C
+    asLinearCS* Inherit @ 0x80
+}
+
+asCamera : asNode (364, 392);
+
+asForm : asNode (8, 36);
+
+asDofCS : asLinearCS (112, 244);
+
+asViewCS : asLinearCS (156, 288);
+
+Matrix34 : Root (48, 48) {
+    Vector3 a @ 0x0
+    Vector3 b @ 0xC
+    Vector3 c @ 0x18
+    Vector3 d @ 0x24
+}
 
 Root (0)
-
-Base (4) : Root (0)
+Base : Root (4, 4);
 
