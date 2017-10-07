@@ -5,7 +5,7 @@
 class MiniParser
 {
 public:
-    char NameBuffer[256];
+    char Buffer[256];
     unsigned int dword104;
     const char *Name;
     unsigned int CurrentToken;
