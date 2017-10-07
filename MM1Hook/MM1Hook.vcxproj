@@ -90,6 +90,7 @@
     <ClInclude Include="asPortalWeb.h" />
     <ClInclude Include="Base.h" />
     <ClInclude Include="Callback.h" />
+    <ClInclude Include="Card2D.h" />
     <ClInclude Include="eqEvent.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="HierFileSystem.h" />

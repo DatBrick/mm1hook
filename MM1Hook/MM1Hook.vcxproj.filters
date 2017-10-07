@@ -102,6 +102,9 @@
     <ClInclude Include="eqEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Card2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MM1Hook.cpp">
