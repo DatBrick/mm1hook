@@ -87,8 +87,10 @@
     <ClInclude Include="asLinearCS.h" />
     <ClInclude Include="asNode.h" />
     <ClInclude Include="agiRefreshable.h" />
+    <ClInclude Include="asPortalWeb.h" />
     <ClInclude Include="Base.h" />
     <ClInclude Include="Callback.h" />
+    <ClInclude Include="eqEvent.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="HierFileSystem.h" />
     <ClInclude Include="Hooking.h" />
@@ -123,6 +125,7 @@
   <ItemGroup>
     <Text Include="mmlang.txt" />
     <Text Include="metaclass_types.txt" />
+    <Text Include="random.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

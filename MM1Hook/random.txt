@@ -1,0 +1,40 @@
+.cells:
+    CSV:
+        CullCount
+        CellCount
+
+        for i from 0 to CullCount:
+            CellIndex, MeshFlags, Flags, NeighbourCount, Neighbours[NeighbourCount]
+
+        MeshFlags:
+            0x10  : "CULL%02d"
+            0x8   : "CULL%02d_H"
+            0x4   : "CULL%02d_M"
+            0x2   : "CULL%02d_L"
+            0x1   : "CULL%02d_A"
+            0x100 : "CULL%02d_H2"
+            0x80  : "CULL%02d_M2"
+            0x40  : "CULL%02d_L2"
+            0x20  : "CULL%02d_A2"
+
+        Flags:
+            0x1  : Tunnel? DrawLit else DrawLitEnv
+            0x4  : Load "T_WATER" mesh
+            0x20 : Z buffer something
+            0x80 : agiMeshSet::FogValue = 0.25;
+
+    Drawing:
+        for i from 0 to NeighbourCount:
+            id   = Neighbours[i]
+            cell = GetCell(abs(id))
+
+            ; CurrentTag is increased once per frame
+            ; Checks if the cell hasn't been updated?
+            if ( id < 0 or cell->Tag != CurrentTag ):
+              cell.Draw()
+
+mmPolygon:
+    1 = Unk1
+    2 = Unk2
+    4 = Coplanar
+    8 = 2-tris

@@ -96,6 +96,12 @@
     <ClInclude Include="agiLight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="asPortalWeb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eqEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MM1Hook.cpp">
@@ -114,5 +120,6 @@
   <ItemGroup>
     <Text Include="mmlang.txt" />
     <Text Include="metaclass_types.txt" />
+    <Text Include="random.txt" />
   </ItemGroup>
 </Project>
