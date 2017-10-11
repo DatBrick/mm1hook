@@ -52,12 +52,12 @@ struct FunctionHook : DetourHook
 
     operator Function()
     {
-        return reinterpret_cast<Function>(_pFunc);
+        return reinterpret_cast<Function&>(_pFunc);
     }
 
     template <typename... Args>
     auto operator()(Args&&... args)
     {
-        return static_cast<Function>(*this)(std::forward<Args>(args)...);
+        return std::invoke(static_cast<Function>(*this), std::forward<Args>(args)...);
     }
 };

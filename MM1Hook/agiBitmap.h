@@ -8,7 +8,7 @@
 struct agiBitmap : public agiRefreshable
 {
     const char *Name;
-    agiSurfaceDesc *pSurfaceDesc;
+    struct agiSurfaceDesc *pSurfaceDesc;
     unsigned int Transparency;
     unsigned int Width;
     unsigned int Height;

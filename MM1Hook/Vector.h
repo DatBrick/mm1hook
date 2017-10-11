@@ -22,3 +22,9 @@ struct Matrix34
     Vector3 m2;
     Vector3 m3;
 };
+
+
+struct Point
+{
+    int x, y;
+};
