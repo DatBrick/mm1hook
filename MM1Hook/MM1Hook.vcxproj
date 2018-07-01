@@ -79,6 +79,7 @@
     <ClInclude Include="agi.h" />
     <ClInclude Include="agiBitmap.h" />
     <ClInclude Include="agiColorModel.h" />
+    <ClInclude Include="agiLib.h" />
     <ClInclude Include="agiLight.h" />
     <ClInclude Include="agiPipeline.h" />
     <ClInclude Include="agiRasterizer.h" />
@@ -93,6 +94,7 @@
     <ClInclude Include="Card2D.h" />
     <ClInclude Include="eqEvent.h" />
     <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="HashTable.h" />
     <ClInclude Include="HierFileSystem.h" />
     <ClInclude Include="Hooking.h" />
     <ClInclude Include="ipc.h" />
